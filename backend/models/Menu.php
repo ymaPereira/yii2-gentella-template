@@ -35,7 +35,6 @@ class Menu extends \yii\db\ActiveRecord
         return [
             [['name'], 'required'],
             [['parent', 'order'], 'integer'],
-            [['data'], 'string'],
             [['name'], 'string', 'max' => 128],
             [['route'], 'string', 'max' => 255],
             [['parent'], 'exist', 'skipOnError' => true, 'targetClass' => Menu::className(), 'targetAttribute' => ['parent' => 'id']],
@@ -65,7 +64,6 @@ class Menu extends \yii\db\ActiveRecord
             'parent' => 'Menu Pai',
             'route' => 'Página',
             'order' => 'Ordem',
-            'data' => 'Data',
         ];
     }
 

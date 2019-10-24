@@ -9,14 +9,12 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
     public static $files = array (
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -30,16 +28,6 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
-        ),
-        'u' => 
-        array (
-            'unclead\\multipleinput\\tests\\' => 28,
-            'unclead\\multipleinput\\examples\\' => 31,
-            'unclead\\multipleinput\\' => 22,
-        ),
-        's' => 
-        array (
-            'setasign\\Fpdi\\' => 14,
         ),
         'r' => 
         array (
@@ -56,11 +44,6 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
         'k' => 
         array (
             'kartik\\select2\\' => 15,
-            'kartik\\mpdf\\' => 12,
-            'kartik\\grid\\' => 12,
-            'kartik\\dialog\\' => 14,
-            'kartik\\datetime\\' => 16,
-            'kartik\\date\\' => 12,
             'kartik\\base\\' => 12,
         ),
         'c' => 
@@ -89,15 +72,9 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
         ),
-        'M' => 
-        array (
-            'Mpdf\\' => 5,
-        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
-            'GuzzleHttp\\Promise\\' => 19,
-            'GuzzleHttp\\' => 11,
         ),
         'F' => 
         array (
@@ -153,22 +130,6 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
-        'unclead\\multipleinput\\tests\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/unclead/yii2-multiple-input/tests',
-        ),
-        'unclead\\multipleinput\\examples\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/unclead/yii2-multiple-input/examples',
-        ),
-        'unclead\\multipleinput\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/unclead/yii2-multiple-input/src',
-        ),
-        'setasign\\Fpdi\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/setasign/fpdi/src',
-        ),
         'rmrevin\\yii\\fontawesome\\' => 
         array (
             0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
@@ -186,26 +147,6 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
         'kartik\\select2\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-select2/src',
-        ),
-        'kartik\\mpdf\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-mpdf/src',
-        ),
-        'kartik\\grid\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-grid/src',
-        ),
-        'kartik\\dialog\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-dialog/src',
-        ),
-        'kartik\\datetime\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datetimepicker/src',
-        ),
-        'kartik\\date\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datepicker/src',
         ),
         'kartik\\base\\' => 
         array (
@@ -267,21 +208,9 @@ class ComposerStaticInitd006f31e731c07216a5759fb3dd6b5e6
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Mpdf\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
-        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
-        ),
-        'GuzzleHttp\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
-        ),
-        'GuzzleHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Faker\\' => 
         array (

@@ -84,15 +84,6 @@ return array (
       '@yiister/gentelella' => $vendorDir . '/yiister/yii2-gentelella',
     ),
   ),
-  'kartik-v/yii2-krajee-base' => 
-  array (
-    'name' => 'kartik-v/yii2-krajee-base',
-    'version' => '2.0.4.0',
-    'alias' => 
-    array (
-      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base/src',
-    ),
-  ),
   'kartik-v/yii2-widget-select2' => 
   array (
     'name' => 'kartik-v/yii2-widget-select2',
@@ -111,17 +102,6 @@ return array (
       '@kartik/datetime' => $vendorDir . '/kartik-v/yii2-widget-datetimepicker/src',
     ),
   ),
-  'unclead/yii2-multiple-input' => 
-  array (
-    'name' => 'unclead/yii2-multiple-input',
-    'version' => '2.21.0.0',
-    'alias' => 
-    array (
-      '@unclead/multipleinput/examples' => $vendorDir . '/unclead/yii2-multiple-input/examples',
-      '@unclead/multipleinput' => $vendorDir . '/unclead/yii2-multiple-input/src',
-      '@unclead/multipleinput/tests' => $vendorDir . '/unclead/yii2-multiple-input/tests',
-    ),
-  ),
   'kartik-v/yii2-widget-datepicker' => 
   array (
     'name' => 'kartik-v/yii2-widget-datepicker',
@@ -129,15 +109,6 @@ return array (
     'alias' => 
     array (
       '@kartik/date' => $vendorDir . '/kartik-v/yii2-widget-datepicker/src',
-    ),
-  ),
-  'kartik-v/yii2-dialog' => 
-  array (
-    'name' => 'kartik-v/yii2-dialog',
-    'version' => '1.0.5.0',
-    'alias' => 
-    array (
-      '@kartik/dialog' => $vendorDir . '/kartik-v/yii2-dialog/src',
     ),
   ),
   'kartik-v/yii2-grid' => 
@@ -156,6 +127,15 @@ return array (
     'alias' => 
     array (
       '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf/src',
+    ),
+  ),
+  'kartik-v/yii2-krajee-base' => 
+  array (
+    'name' => 'kartik-v/yii2-krajee-base',
+    'version' => '2.0.5.0',
+    'alias' => 
+    array (
+      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base/src',
     ),
   ),
 );

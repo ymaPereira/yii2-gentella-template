@@ -20,8 +20,8 @@ return [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
         ],
         'user' => [
-            //'class' => 'mdm\admin\models\User',
             'identityClass' => 'common\models\User',
+           // 'class' => 'common\models\User',
             'loginUrl' => ['site/login'],
         ],
         'as beforeRequest'=>[

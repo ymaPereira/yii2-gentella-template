@@ -11,14 +11,9 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [
-        'orcamento' => [
-            'class' => 'backend\modules\orcamento\Orcamento',
-        ], 
-        'crm' => [
-            'class' => 'backend\modules\crm\Crm',
-        ], 
-    ],
+    /*'modules' => [
+  
+    ],*/
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -27,7 +22,7 @@ return [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
             'loginUrl' => ['site/login'], 
-            'identityCookie' => ['name' => '_identity-pme-backend', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
             'authTimeout' => 1000,
             'on afterLogin'=>function($event){
                 $role = \Yii::$app->authManager->getRolesByUser(\Yii::$app->user->identity->id);
@@ -43,7 +38,7 @@ return [
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
-            'name' => 'pme-backend',
+            'name' => 'backend-app',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
