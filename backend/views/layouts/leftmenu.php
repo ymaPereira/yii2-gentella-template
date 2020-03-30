@@ -4,17 +4,17 @@ use backend\models\AuthItem;
 use backend\models\AuthAssignment;
 use backend\models\AuthItemChild;
     $query = new \yii\db\Query;
-    $query = $query->select('M1.*,M2.name as Menu_Pai')
-            ->from(Menu::tableName().' AS M1')
-            ->join('join',Menu::tableName().' AS M2')
-            ->join('join',AuthItem::tableName().' AS A')
-            ->join('join',AuthAssignment::tableName().' AS P')
-            ->join('join',AuthItemChild::tableName().' AS C')
-            ->where('M1.parent=M2.id and M1.route = A.name')
-            ->andWhere('P.item_name=:role',[':role'=>Yii::$app->session->get('role')])
-            ->andWhere('P.user_id=:id',[':id'=>\Yii::$app->user->identity->id])
-            ->andWhere('C.child = M1.route')
-            ->andWhere('C.parent = P.item_name')
+    $query = $query->select('m1.*,m2.name as Menu_Pai')
+            ->from(Menu::tableName().' AS m1,'
+            .Menu::tableName().' AS m2,'
+            .AuthItem::tableName().' AS a,'
+            .AuthAssignment::tableName().' AS p,'
+            .AuthItemChild::tableName().' AS c')
+            ->where('m1.parent=m2.id and m1.route = a.name')
+            ->andWhere('p.item_name=:role',[':role'=>Yii::$app->session->get('role')])
+            ->andWhere('p.user_id=:id',[':id'=>\Yii::$app->user->identity->id])
+            ->andWhere('c.child = m1.route')
+            ->andWhere('c.parent = p.item_name')
             ->all();
     $menus = null;
     if(!empty($query)){
